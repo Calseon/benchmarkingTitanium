@@ -5,6 +5,7 @@
 		<View layout="horizontal" height="Titanium.UI.SIZE" width="Titanium.UI.FILL">
 			<Button height="Titanium.UI.SIZE" title="Start" onClick="startTest"></Button>
 			<Button height="Titanium.UI.SIZE" title="Reset" onClick="resetTest"></Button>
+			<Button height="Titanium.UI.SIZE" title="Hide" onClick="toggleHide" id="btnHide"></Button>
 		</View>
 		<ScrollView layout="vertical" height="Titanium.UI.SIZE" width="Titanium.UI.FILL" id="viewGenContainer">
 			
