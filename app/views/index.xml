@@ -1,14 +1,16 @@
 <Alloy>
 	<Window class="container" layout="vertical">
-		<Label id="lblTime">Time:</Label>
-		<TextField id="tf_numViews" height="Titanium.UI.SIZE" width="Titanium.UI.FILL" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD"> </TextField>
-		<View layout="horizontal" height="Titanium.UI.SIZE" width="Titanium.UI.FILL">
-			<Button height="Titanium.UI.SIZE" title="Start" onClick="startTest"></Button>
-			<Button height="Titanium.UI.SIZE" title="Reset" onClick="resetTest"></Button>
-			<Button height="Titanium.UI.SIZE" title="Hide" onClick="toggleHide" id="btnHide"></Button>
+		<View id="mainView" layout="vertical" height="Titanium.UI.FILL" width="Titanium.UI.FILL">
+			<Label id="lblTime">Time:</Label>
+			<TextField id="tf_numViews" height="Titanium.UI.SIZE" width="Titanium.UI.FILL" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD"> </TextField>
+			<View layout="horizontal" height="Titanium.UI.SIZE" width="Titanium.UI.FILL">
+				<Button height="Titanium.UI.SIZE" title="Start" onClick="startTest"></Button>
+				<Button height="Titanium.UI.SIZE" title="Reset" onClick="resetTest"></Button>
+				<Button height="Titanium.UI.SIZE" title="Hide" onClick="toggleHide" id="btnHide"></Button>
+			</View>
+			<ScrollView layout="vertical" height="Titanium.UI.SIZE" width="Titanium.UI.FILL" id="viewGenContainer">
+				
+			</ScrollView>
 		</View>
-		<ScrollView layout="vertical" height="Titanium.UI.SIZE" width="Titanium.UI.FILL" id="viewGenContainer">
-			
-		</ScrollView>
 	</Window>
 </Alloy>

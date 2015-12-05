@@ -5,7 +5,8 @@ $.lblTime.setColor("#000");
 $.tf_numViews.setColor("#000");
 $.btnHide.setTitle(hide ? "Hide: On" : "Hide: Off");
 
-
+if (Ti.Platform.osname === 'ipad' || Ti.Platform.osname === 'iphone')
+	$.mainView.setTop(50);
 
 function startTest(e){
 	resetTest(e);
