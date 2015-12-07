@@ -6,9 +6,13 @@ $.tf_numViews.setColor("#000");
 $.btnHide.setTitle(hide ? "Hide: On" : "Hide: Off");
 
 if (Ti.Platform.osname === 'ipad' || Ti.Platform.osname === 'iphone')
+{
 	$.mainView.setTop(50);
+	$.viewGenContainer.setHeight(400);
+}
 
 function startTest(e){
+	hideKeyboard();
 	resetTest(e);
 	var start = new Date().getTime();
 	var num = $.tf_numViews.value;
@@ -41,3 +45,11 @@ function toggleHide(e){
 	hide = !hide;
 	$.btnHide.setTitle(hide ? "Hide: On" : "Hide: Off");
 }
+
+function hideKeyboard(){
+	$.tf_numViews.blur();
+}
+
+$.viewGenContainer.addEventListener('singletap', function(e){
+	hideKeyboard();
+});
